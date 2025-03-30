@@ -7,8 +7,9 @@ pipeline = Pipeline.from_pretrained(
     use_auth_token=True)
 
 # send pipeline to GPU (when available)
-# import torch
-# pipeline.to(torch.device("cuda"))
+import torch
+if torch.cuda.is_available():
+    pipeline.to(torch.device("cuda"))
 
 def diarization_of_files(input_directory, output_directory=None):
     """ Diariza all wav files in a folder"
