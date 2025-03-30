@@ -44,7 +44,7 @@ if __name__ == "__main__":
     # Run from the root of the repo
     # Replace with your actual directory paths
     input_directory = "../notebooklm-sample"
-    output_directory = "../notbooklm-sample"
+    output_directory = "../notebooklm-sample"
     
     diarization_of_files(input_directory, output_directory)
     
