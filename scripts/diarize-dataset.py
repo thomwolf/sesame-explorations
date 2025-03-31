@@ -12,7 +12,7 @@ if torch.cuda.is_available():
     pipeline.to(torch.device("cuda"))
 
 def diarization_of_files(input_directory, output_directory=None):
-    """ Diariza all wav files in a folder"
+    """ Diarize all wav files in a folder"
     """
 
     # list .wav files in the directory
@@ -38,6 +38,7 @@ def diarization_of_files(input_directory, output_directory=None):
         with open(f"{output_directory}/{wav_file.split('/')[-1].replace('.wav', '')}.rttm", "w") as f:
             diarization.write_rttm(f)
         print(f"Finished saving diarization of {wav_file}...")
+
 
 # Example usage
 if __name__ == "__main__":
