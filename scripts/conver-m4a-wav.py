@@ -53,8 +53,8 @@ def convert_m4a_to_wav(input_directory, output_directory=None):
 # Example usage
 if __name__ == "__main__":
     # Replace with your actual directory paths
-    input_directory = "path/to/m4a/files"
-    output_directory = "path/to/output/wav/files"  # Optional
+    input_directory = "/home/thomwolf/Documents/Github/notebooklm-sample/"
+    output_directory = input_directory
     
     # Convert all M4A files in the input directory
     convert_m4a_to_wav(input_directory, output_directory)
